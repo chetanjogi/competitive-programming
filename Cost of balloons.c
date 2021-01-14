@@ -2,11 +2,11 @@
 int main()
 {
     int t;
-    scanf("%d", &t); //test case
+    scanf("%d", &t); 
     while (t)
     {
         int cg, cp;
-        scanf("%d%d", &cg, &cp); //price of balloons
+        scanf("%d%d", &cg, &cp); 
         int nop;
         scanf("%d", &nop);
         int col1 = 0, col2 = 0;
@@ -27,9 +27,7 @@ int main()
             }
         }
 
-        //c1
         int countifgreenselected = cg * col1 + cp * col2;
-        //c2
         int countifpurpleselected = cp * col1 + cg * col2;
 
         if (countifgreenselected < countifpurpleselected)
